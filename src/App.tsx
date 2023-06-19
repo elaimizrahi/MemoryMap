@@ -11,6 +11,8 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import './App.css';
+import TitleBar from './components/TitleBar';
+import MapPage from './pages/MapPage';
 
 function App() {
   const theme = useMantineTheme();
@@ -54,12 +56,12 @@ function App() {
               />
             </MediaQuery>
 
-            <Text>Application header</Text>
+            <TitleBar/>
           </div>
         </Header>
       }
     >
-      <Text>Resize app to see responsive navbar in action</Text>
+      <MapPage/>
     </AppShell>
   );
 }
