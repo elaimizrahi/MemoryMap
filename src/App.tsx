@@ -11,7 +11,7 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import './App.css';
-import TitleBar from './components/TitleBar';
+import TitleBar from './components/TitleBar/TitleBar';
 import MapPage from './pages/MapPage';
 
 function App() {
@@ -28,19 +28,20 @@ function App() {
       asideOffsetBreakpoint="sm"
       navbar={
         <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
-          <Text>Application navbar</Text>
+          <Text>Select Teams or add memories
+          </Text>
         </Navbar>
       }
       aside={
         <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
           <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
-            <Text>Application sidebar</Text>
+            <Text>Current Map Stats</Text>
           </Aside>
         </MediaQuery>
       }
       footer={
         <Footer height={60} p="md">
-          Application footer
+          Probably not needed anymore
         </Footer>
       }
       header={

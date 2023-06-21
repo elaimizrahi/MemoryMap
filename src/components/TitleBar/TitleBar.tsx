@@ -2,7 +2,7 @@ import React from 'react'
 
 function TitleBar() {
   return (
-    <div>Header</div>
+    <div>MemoryMap</div>
   )
 }
 
